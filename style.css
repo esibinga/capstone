@@ -10,7 +10,7 @@ body{
       max-width: 75%;
       padding: 0% 2% 0% 2%;
       margin: auto;
-      margin-top: 5%;
+      margin-top: 2%;
   }
   
   /* Style the header with padding */
@@ -20,7 +20,7 @@ body{
       margin: auto;
       font-family: monaco;
       width: inherit;
-      border-bottom: .5mm solid  rgba(116, 106, 100);
+      text-align: center;
     }
     
     h1 {
@@ -29,6 +29,11 @@ body{
         font-size: 32pt;
         font-family: "Monaco", sans-serif;
         color: rgba(116, 106, 100);
+        margin-bottom: 5%;
+    }
+
+    .observable{
+        padding: 1% 5%;
     }
 
     /* this formatting matches the "watercolor data viz" website page */
