@@ -1,17 +1,19 @@
 body{
     display: grid;
-    background-color: white;
-    font-family: "Roboto Slab", sans-serif; 
-    color: rgb(77, 70, 66);
+    background-color: #fff1c5;
+    /* background-color: #fdfaf1; */
+    font-family: 'helvetica-light', sans-serif; 
+    color: #23343f
+    /* color: rgb(77, 70, 66); */
 }
 
   div.h1h2 {
-      border-bottom: .5mm solid  rgba(116, 106, 100);
-      max-width: 75%;
-      padding: 0% 2% 0% 2%;
-      margin: auto;
+      /* border-bottom: .5mm solid  rgba(116, 106, 100); */
+      max-width: 100%;
+      padding: 0% 7%;
+      /* margin: auto; */
       margin-top: 2%;
-  }
+    }
   
   /* Style the header with padding */
   .header {
@@ -26,21 +28,244 @@ body{
     h1 {
         text-align: center;
         font-weight: 300;
-        font-size: 32pt;
-        font-family: "Monaco", sans-serif;
-        color: rgba(116, 106, 100);
-        margin-bottom: 5%;
+        font-size: 24pt;
+        font-family: "Monaco", 'helvetica-light';
+        color: #23343f;
+        /* color: rgba(116, 106, 100); */
+        margin-bottom: 2%;
+    }
+    .question{
+        font-family: 'monaco';
+        /* padding: 25% 7%; */
+        margin-bottom: 0%;
+        text-align: center;
+        height: 100vh;
+    }
+
+    #title-slide-question {
+        line-height: 90vh;
+    }
+
+    .instructions{
+        font-family: 'monaco';
+        padding: 0% 7%;
+        margin-bottom: 0%;
     }
 
     .observable{
-        padding: 1% 5%;
+        padding: 1% 7%;
+    }
+
+    #form {
+        padding: 1% 7%; 
     }
 
     /* this formatting matches the "watercolor data viz" website page */
     .body-text{
-        padding-left: 20%;
-        padding-right: 20%;
-        font-family: "Roboto Slab", sans-serif; 
+        padding-left: 7%;
+        padding-right: 7%;
+        /* font-family: "Roboto Slab", sans-serif;  */
+        font-family: 'helvetica-light';
+    
     }
 
-    
+
+    /*  image fade-ins  */
+
+    img {
+        max-height: 15vh; /* dynamically resize images */
+        /* max-width: 15vh; dynamically resize images */
+
+    }
+
+    .fade-in-image {
+
+        position: absolute;
+        animation: fadeIn 10s;
+
+        visibility: hidden;
+
+        -webkit-animation: fadeIn 10s;
+        -moz-animation: fadeIn 10s;
+        -o-animation: fadeIn 10s;
+        -ms-animation: fadeIn 10s;
+      }
+      @keyframes fadeIn {
+        0% {opacity:0;}
+        100% {
+            visibility: visible;
+            opacity: 1;}
+      }
+      
+      @-moz-keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {
+            visibility: visible; 
+            opacity: 1;}
+      }
+      
+      @-webkit-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {
+            visibility: visible; 
+            opacity: 1;}
+      }
+      
+      @-o-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {
+            visibility: visible; 
+            opacity: 1;}
+      }
+      
+      @-ms-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {
+            visibility:visible; 
+            opacity: 1;}
+      }
+
+      #cooking {
+          top: 25%;
+          left: 40%;
+          animation-delay: 1s;
+          animation-fill-mode: forwards;
+      }
+
+      #cleaning {
+        top: 60%;
+        left: 25%;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        max-height: 20vh; /* dynamically resize images */
+    }
+
+      #finding-lost-things {
+          top: 60%;
+          left: 65%;
+          animation-delay: 3s;
+          animation-fill-mode: forwards;
+      }
+
+      #trusting {
+        top: 75%;
+        left: 50%;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+    }
+
+    #breastfeeding {
+        top: 20%;
+        left: 65%;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
+    }
+    #remembering {
+        top: 30%;
+        left: 20%;
+        animation-delay: 5.5s;
+        animation-fill-mode: forwards;
+    }
+    #deep-listening {
+        top: 50%;
+        left: 90%;
+        animation-delay: 6s;
+        animation-fill-mode: forwards;
+    }
+    #changing-diapers {
+        top: 10%;
+        left: 25%;
+        animation-delay: 6.5s;
+        animation-fill-mode: forwards;
+    }
+    #chauffering {
+        top: 58%;
+        left: 40%;
+        animation-delay: 7s;
+        animation-fill-mode: forwards;
+    }
+    #cooking-with-variety {
+        top: 75%;
+        left: 80%;
+        animation-delay: 7s;
+        animation-fill-mode: forwards;
+    }
+    #dishes {
+        top: 35%;
+        left: 80%;
+        animation-delay: 7.5s;
+        animation-fill-mode: forwards;
+    }
+    #event-planning {
+        top: 10%;
+        left: 55%;
+        animation-delay: 8s;
+        animation-fill-mode: forwards;
+    }
+    #food-preparation {
+        top: 10%;
+        left: 10%;
+        animation-delay: 8.5s;
+        animation-fill-mode: forwards;
+    }
+    #food-preservation {
+        top: 80%;
+        left: 70%;
+        animation-delay: 8s;
+        animation-fill-mode: forwards;
+    }
+    #gardening {
+        top: 70%;
+        left: 5%;
+        animation-delay: 9s;
+        animation-fill-mode: forwards;
+    }
+    #giving-feedback {
+        top: 80%;
+        left: 35%;
+        animation-delay: 9.5s;
+        animation-fill-mode: forwards;
+    }
+    #holding-space {
+        top: 5%;
+        left: 85%;
+        animation-delay: 9.5s;
+        animation-fill-mode: forwards;
+    }
+    #laundry {
+        top: 40%;
+        left: 5%;
+        animation-delay: 10s;
+        animation-fill-mode: forwards;
+    }
+
+    #phone {
+        top: 50%;
+        left: 15%;
+        animation-delay: 10s;
+        animation-fill-mode: forwards;
+    }
+    #reading {
+        top: 80%;
+        left: 15%;
+        animation-delay: 10s;
+        animation-fill-mode: forwards;
+    }
+    #returning-shopping {
+        top: 18%;
+        left: 78%;
+        animation-delay: 10s;
+        animation-fill-mode: forwards;
+    }
+    #scheduling {
+        top: 30%;
+        left: 90%;
+        animation-delay: 10s;
+        animation-fill-mode: forwards;
+    }
+    #shopping-for-others {
+        top: 5%;
+        left: 40%;
+        animation-delay: 10s;
+        animation-fill-mode: forwards;
+    }

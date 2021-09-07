@@ -11,24 +11,113 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@400&?family=Open+Sans:wght@300&family=Roboto+Slab:wght@300&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/68fa9d8bd0.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </head>
-<div class="h1h2">
+<!-- <div class="h1h2">
     <h1>
-        labor + care
+        making space for unquantifiable data: <br>hand-drawn data viz
     </h1>
-</div>
-<div class="header">
-    <p> can we visualize the data of everyday, unquantified life?
+</div> -->
+<div class="question">
+    <div class="fade-in-image" id="cooking">
+        <img src="images/cooking.svg" alt="frying pan with an egg" height="100">
+    </div>
+    <div class="fade-in-image" id="cleaning">
+        <img src="images/cleaning.svg" alt="broom" height="175">
+    </div>
+    <div class="fade-in-image" id="finding-lost-things">
+        <img src="images/finding_lost_things.svg" alt="tangled headphones" height="90">
+    </div>
+    <div class="fade-in-image" id="trusting">
+        <img src="images/trusting.svg" alt="hands doing a pinky swear" height="125">
+    </div>
+    <div class="fade-in-image" id="breastfeeding">
+        <img src="images/breastfeeding.svg" alt="a breastfeeding mother" height="125">
+    </div>
+    <div class="fade-in-image" id="remembering">
+        <img src="images/remembering.svg" alt="a small card with a flower" height="80">
+    </div>
+    <div class="fade-in-image" id="changing-diapers">
+        <img src="images/changing_diapers.svg" alt="a cloth diaper" height="100">
+    </div>
+    <div class="fade-in-image" id="chauffering">
+        <img src="images/chauffering.svg" alt="a blue sedan-style car" height="80">
+    </div>
+    <div class="fade-in-image" id="cooking-with-variety">
+        <img src="images/cooking with variety.svg" alt="a binder labeled 'recipes'" height="100">
+    </div>
+    <div class="fade-in-image" id="deep-listening">
+        <img src="images/deep_listening.svg" alt="an anatomical heart" height="100">
+    </div>
+    <div class="fade-in-image" id="dishes">
+        <img src="images/dishes.svg" alt="a plate and soapy sponge" height="100">
+    </div>
+    <div class="fade-in-image" id="event-planning">
+        <img src="images/event_planning.svg" alt="a red and white polka dotted party hat" height="100">
+    </div>
+    <div class="fade-in-image" id="food-preparation">
+        <img src="images/food_preparation.svg" alt="a shopping cart" height="100">
+    </div>
+    <div class="fade-in-image" id="food-preservation">
+        <img src="images/food_preservation.svg" alt="a jar of preserved beets" height="100">
+    </div>
+    <div class="fade-in-image" id="gardening">
+        <img src="images/gardening.svg" alt="a carrot with greens attached" height="150">
+    </div>
+    <div class="fade-in-image" id="giving-feedback">
+        <img src="images/giving_feedback.svg" alt="a paper with a pink post-it on it" height="100">
+    </div>
+    <div class="fade-in-image" id="holding-space">
+        <img src="images/holding_space.svg" alt="cupped hands" height="100">
+    </div>
+    <div class="fade-in-image" id="laundry">
+        <img src="images/laundry.svg" alt="an orange tee-shirt with a small stain" height="100">
+    </div>
+
+    <div class="fade-in-image" id="phone">
+        <img src="images/picking_up_the_phone.svg" alt="a reddish purple telephone with a curly cord" height="100">
+    </div>
+    <div class="fade-in-image" id="reading">
+        <img src="images/reading.svg" alt="an open book with a red cover" height="100">
+    </div>
+    <div class="fade-in-image" id="returning-shopping">
+        <img src="images/returning_shopping.svg" alt="a receipt" height="80">
+    </div>
+    <div class="fade-in-image" id="scheduling">
+        <img src="images/scheduling.svg" alt="a calendar with green border" height="100">
+    </div>
+    <div class="fade-in-image" id="shopping-for-others">
+        <img src="images/shopping_for_others.svg" alt="a child's purple mary-jane shoe" height="100">
+    </div>
+
+    <p id="title-slide-question">
+        how do we measure unpaid labor?
     </p>
-    <p>i.e. truth with no data</p>
 </div>
+<div class="instructions">
+    <p>
+        Where do <i>you</i> think the icons belong? Adjust the graph to reflect your view:
+    </p>
+</div>
+
+<!--div class="header">
+    <p> visualizing the data of everyday, unquantifiable life
+    </p>
+    <p>-</p>
+    <p>an accompaniment to OECD stats on "unpaid labor"</p>
+</div-->
 
 <div class="observable">
     <iframe width="100%" height="772" frameborder="0"
         src="https://observablehq.com/embed/@esibinga/labor-care?cells=chart"></iframe>
-
 </div>
 
+<form id="form">
+    <label>What did I forget? <input type="text"></label>
+    <br><br>
+    <button type="submit">Request an icon</button>
+</form>
+<p id="log"></p>
 
 <div class="body-text TOC">
     <p>
