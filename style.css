@@ -3,8 +3,8 @@ body{
     background-color: #fff1c5;
     /* background-color: #fdfaf1; */
     font-family: 'helvetica-light', sans-serif; 
-    color: #23343f
-    /* color: rgb(77, 70, 66); */
+    color: #23343f;
+    margin: 0;
 }
 
   div.h1h2 {
@@ -40,24 +40,119 @@ body{
         margin-bottom: 0%;
         text-align: center;
         height: 100vh;
+        width: 100vw;
+        position: sticky;
+        top: 0;
+        bottom: 200px;
+        z-index: 0;
     }
 
     #title-slide-question {
         line-height: 90vh;
     }
 
-    .instructions{
+    .primer {
         font-family: 'monaco';
-        padding: 0% 7%;
+        padding: 0% 2%;
         margin-bottom: 0%;
+        margin-top: 50vh;
+        padding-top: 20vh;
+        padding-bottom: 20vh;
+        z-index: 2;
+        background-color: #fff1c5;
+        box-shadow: 0 0 100px 200px #fff1c5;
+        position: sticky;
+        top: 15vh;
     }
 
+    .one {
+        margin-bottom: 0%;
+        z-index: 2;
+        top: 15vh;
+    }
+
+    .two {
+        margin-bottom: 10vh;
+        padding-top: 0vh;
+        padding-bottom: 30vh;
+        z-index: 3;
+        box-shadow: 0 0 0 0 #fff1c5;
+        top: 44vh;
+    }
+
+    .three {
+        margin-bottom: 10vh;
+        /* margin-top: 50vh; */
+        padding-top: 0vh;
+        padding-bottom: 30vh;
+        z-index: 3;
+        background-color: #fff1c5;
+        box-shadow: 0 0 0 0 #fff1c5;
+        position: sticky;
+        top: 53vh;
+    }
+
+    .four {
+        margin-bottom: 0%;
+        z-index: 4;
+        top: 15vh;
+        /* box-shadow: 0 0 0 0 #fff1c5; */
+    }
+
+    .five {
+        margin-bottom: 0%;
+        padding-top: 0vh;
+        z-index: 4;
+        top: 44vh;
+        box-shadow: 0 0 0 0 #fff1c5;
+    }
+
+    .six {
+        margin-bottom: 0%;
+        padding-top: 0vh;
+        z-index: 4;
+        top: 54vh;
+        box-shadow: 0 0 0 0 #fff1c5;
+    }
+
+    .instructions{
+        font-family: 'monaco';
+        padding: 0% 2%;
+        margin-bottom: 0%;
+        margin-top: 50vh;
+        padding-top: 20vh;
+        padding-bottom: 20vh;
+        z-index: 3;
+        background-color: #fff1c5;
+        box-shadow: 0 0 100px 200px #fff1c5;
+        position: sticky;
+        top: 15vh; 
+        /* add some min-vh specs to optimize for mobile */
+    }
+    .text{
+        padding: 0% 15%;
+        line-height: 4vh;
+    }
     .observable{
-        padding: 1% 7%;
+        padding: 1% 0%;
+        background-color: #fff1c5;
+    }
+
+    .observable-container{
+        padding: 1% 0%;
+        background-color: #fff1c5;
+        z-index: 4;
+        box-shadow: 0 0 100px 200px #fff1c5;
+        margin-top: 50vh;
+        /* padding-top: 20vh; */
+        position: sticky;
+        top: 1vh;
     }
 
     #form {
         padding: 1% 7%; 
+        background-color: #fff1c5;
+        z-index: 4;
     }
 
     /* this formatting matches the "watercolor data viz" website page */
@@ -66,7 +161,8 @@ body{
         padding-right: 7%;
         /* font-family: "Roboto Slab", sans-serif;  */
         font-family: 'helvetica-light';
-    
+        background-color: #fff1c5;
+        z-index: 3;
     }
 
 
@@ -125,35 +221,31 @@ body{
             opacity: 1;}
       }
 
-      #cooking {
+    #cooking {
           top: 25%;
           left: 40%;
           animation-delay: 1s;
           animation-fill-mode: forwards;
-      }
-
-      #cleaning {
+    }
+    #cleaning {
         top: 60%;
         left: 25%;
         animation-delay: 2s;
         animation-fill-mode: forwards;
         max-height: 20vh; /* dynamically resize images */
     }
-
-      #finding-lost-things {
+    #finding-lost-things {
           top: 60%;
           left: 65%;
           animation-delay: 3s;
           animation-fill-mode: forwards;
       }
-
-      #trusting {
+    #trusting {
         top: 75%;
         left: 50%;
         animation-delay: 4s;
         animation-fill-mode: forwards;
     }
-
     #breastfeeding {
         top: 20%;
         left: 65%;
@@ -191,8 +283,8 @@ body{
         animation-fill-mode: forwards;
     }
     #dishes {
-        top: 35%;
-        left: 80%;
+        top: 50%;
+        left: 15%;
         animation-delay: 7.5s;
         animation-fill-mode: forwards;
     }
@@ -240,8 +332,8 @@ body{
     }
 
     #phone {
-        top: 50%;
-        left: 15%;
+        top: 40%;
+        left: 75%;
         animation-delay: 10s;
         animation-fill-mode: forwards;
     }
