@@ -1,42 +1,13 @@
 body{
     display: grid;
     background-color: #fff1c5;
-    /* background-color: #fdfaf1; */
     font-family: 'helvetica-light', sans-serif; 
     color: #23343f;
     margin: 0;
 }
 
-  div.h1h2 {
-      /* border-bottom: .5mm solid  rgba(116, 106, 100); */
-      max-width: 100%;
-      padding: 0% 7%;
-      /* margin: auto; */
-      margin-top: 2%;
-    }
-  
-  /* Style the header with padding */
-  .header {
-      overflow: hidden;
-      padding: 10px 10px;
-      margin: auto;
-      font-family: monaco;
-      width: inherit;
-      text-align: center;
-    }
-    
-    h1 {
-        text-align: center;
-        font-weight: 300;
-        font-size: 24pt;
-        font-family: "Monaco", 'helvetica-light';
-        color: #23343f;
-        /* color: rgba(116, 106, 100); */
-        margin-bottom: 2%;
-    }
     .question{
         font-family: 'monaco';
-        /* padding: 25% 7%; */
         margin-bottom: 0%;
         text-align: center;
         height: 100vh;
@@ -49,13 +20,25 @@ body{
 
     #title-slide-question {
         line-height: 90vh;
+        font-size: 3vmin;
+    }
+
+    #scroll-arrow {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        animation: fadeIn 5s;
+        visibility: hidden;
+        color: #23343f85;
+        animation-delay: 12s;
+        animation-fill-mode: forwards;
     }
 
     .primer {
         font-family: 'monaco';
         padding: 0% 2%;
         margin-bottom: 0%;
-        margin-top: 50vh;
+        margin-top: 40vh;
         padding-top: 20vh;
         padding-bottom: 20vh;
         z-index: 2;
@@ -67,17 +50,23 @@ body{
 
     .one {
         margin-bottom: 0%;
-        z-index: 2;
         top: 15vh;
+    }
+
+    #one{
+        z-index: 2;
     }
 
     .two {
         margin-bottom: 10vh;
         padding-top: 0vh;
         padding-bottom: 30vh;
-        z-index: 3;
         box-shadow: 0 0 0 0 #fff1c5;
         top: 44vh;
+    }
+
+    #two{
+        z-index: 3; 
     }
 
     .three {
@@ -85,16 +74,18 @@ body{
         /* margin-top: 50vh; */
         padding-top: 0vh;
         padding-bottom: 30vh;
-        z-index: 3;
         background-color: #fff1c5;
         box-shadow: 0 0 0 0 #fff1c5;
         position: sticky;
         top: 53vh;
     }
 
+    #three{
+        z-index: 4;
+    }
+
     .four {
         margin-bottom: 0%;
-        z-index: 4;
         top: 15vh;
         /* box-shadow: 0 0 0 0 #fff1c5; */
     }
@@ -102,7 +93,6 @@ body{
     .five {
         margin-bottom: 0%;
         padding-top: 0vh;
-        z-index: 4;
         top: 44vh;
         box-shadow: 0 0 0 0 #fff1c5;
     }
@@ -110,7 +100,6 @@ body{
     .six {
         margin-bottom: 0%;
         padding-top: 0vh;
-        z-index: 4;
         top: 54vh;
         box-shadow: 0 0 0 0 #fff1c5;
     }
@@ -153,17 +142,35 @@ body{
         padding: 1% 7%; 
         background-color: #fff1c5;
         z-index: 4;
+        font-family: 'monaco';
     }
 
-    /* this formatting matches the "watercolor data viz" website page */
-    .body-text{
-        padding-left: 7%;
-        padding-right: 7%;
-        /* font-family: "Roboto Slab", sans-serif;  */
-        font-family: 'helvetica-light';
-        background-color: #fff1c5;
-        z-index: 3;
+    #icon-button{
+        font-family: 'monaco';
+        background-color: #fffbf3;
     }
+
+
+    /* media queries */
+    @media only screen and (max-width: 600px) {
+        .primer {
+            margin-top: 10vh;
+            padding-top: 10vh;
+            padding-bottom: 20vh;
+            z-index: 2;
+            background-color: #fff1c5;
+            box-shadow: 0 0 100px 200px #fff1c5;
+            position: sticky;
+            top: 10vh;
+        }
+
+        .one {
+            margin-bottom: 0%;
+            top: 1vh;
+            padding-top: 10vh;
+
+        }
+      }
 
 
     /*  image fade-ins  */
