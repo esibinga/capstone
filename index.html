@@ -11,7 +11,11 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@400&?family=Open+Sans:wght@300&family=Roboto+Slab:wght@300&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/68fa9d8bd0.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script src="main.js"></script>
+    <!-- <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script> -->
 </head>
 
 <div class="question">
@@ -164,16 +168,41 @@
         <iframe width="100%" height="772" frameborder="0"
             src="https://observablehq.com/embed/@esibinga/labor-care?cells=chart"></iframe>
     </div>
-</div>
 
-<form id="form">
-    <label>What did I forget? <input type="text"></label>
-    <br><br>
-    <button type="submit" id="icon-button">Request an icon</button>
-</form>
+
+    <br>
+    <div class="end-text">
+        <p>Drag the icons to better reflect how you see them, and mouse over the axes for more prompts.</p>
+    </div>
+
+    <form id="form" name="submit-to-google-sheet">
+        <label>What did I forget?</label>
+        <input type="text" name="icon_request">
+        <br><br>
+        <button type="submit" id="submit-form">Request an icon</button>
+    </form>
+    <br>
+    <br>
+    <div class="end-text">
+        <p>If you'd like to request... </p>
+    </div>
+</div>
 
 <!-- <p id="log"></p> -->
 
-<!-- <div class="end-text">
-    <p>What is this project and where did it come from?</p>
-</div> -->
+<!-- <form name="submit-to-google-sheet">
+    <input name="email" type="email" placeholder="Email" required>
+    <button type="submit">Send</button>
+  </form> -->
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzNysMIceaFLb0roF05AWo2jr6WEcFJivCTwIo5WL_AkAkq3O_cvdOY2WSGEyrTu_EoTw/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>

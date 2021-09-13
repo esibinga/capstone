@@ -125,6 +125,7 @@ body{
     .observable{
         padding: 1% 0%;
         background-color: #fff1c5;
+        margin-bottom: -120px;
     }
 
     .observable-container{
@@ -133,9 +134,19 @@ body{
         z-index: 4;
         box-shadow: 0 0 100px 200px #fff1c5;
         margin-top: 50vh;
-        /* padding-top: 20vh; */
         position: sticky;
         top: 1vh;
+    }
+
+    .end-text{
+        padding: 1% 7%; 
+        background-color: #fff1c5;
+        z-index: 5;
+        font-family: 'monaco';
+        position: absolute;
+        height: 80px;
+        width: 85%;
+        color: #23343fb2;
     }
 
     #form {
@@ -143,9 +154,10 @@ body{
         background-color: #fff1c5;
         z-index: 4;
         font-family: 'monaco';
+        margin-top: 100px;
     }
 
-    #icon-button{
+    #submit-form{
         font-family: 'monaco';
         background-color: #fffbf3;
     }
