@@ -158,7 +158,8 @@
 
 <div class="primer six" id="three">
     <p class="text">
-        unlike most graphs, there's no external data source. adjust the icons to make the graph better reflect the truth
+        unlike most graphs, there's no external data source. it's interactive! drag the icons to make the
+        graph better reflect the truth
         as you see it, feel it, and live it.
     </p>
 </div>
@@ -168,25 +169,84 @@
         <iframe width="100%" height="772" frameborder="0"
             src="https://observablehq.com/embed/@esibinga/labor-care?cells=chart"></iframe>
     </div>
-
-
-    <br>
-    <div class="end-text">
-        <p>Drag the icons to better reflect how you see them, and mouse over the axes for more prompts.</p>
-    </div>
-
-    <form id="form" name="submit-to-google-sheet">
-        <label>What did I forget?</label>
-        <input type="text" name="icon_request">
-        <br><br>
-        <button type="submit" id="submit-form">Request an icon</button>
-    </form>
-    <br>
-    <br>
-    <div class="end-text">
-        <p>If you'd like to request... </p>
+    <p id="drag-reminder">click and drag the icons!</p>
+</div>
+<br>
+<div class="end-text alpha">
+    <div id="end-text-1">
+        <p class="text">Is trusting more work than doing laundry? Is grocery shopping a form of care? What ways do we
+            have to measure
+            and value the labor involved? What about meausuring care? Which of these actions have you done for others?
+            Have you
+            paid someone else to do any of this labor for you? </p>
+        <p class="text">The answers will be different for everyone, and that matters. "Clean data" when it comes to care
+            means scrubbing off parts of what make us human. </p>
+        <p class="text">That's why you can drag the icons to rearrange the graph as you see fit, and why you can request
+            a new icon
+            here to fill in the gaps.</p>
+        <form id="form" name="submit-to-google-sheet">
+            <label>What did I leave out?</label>
+            <input type="text" name="icon_request">
+            <button type="submit" id="submit-form">Request an icon</button>
+        </form>
     </div>
 </div>
+<div class="end-text beta">
+    <div id="end-text-2">
+        <p class="text">Care is hard to measure. The OECD points out cooking and cleaning as <a
+                href="https://oecd-development-matters.org/2019/03/18/why-you-should-care-about-unpaid-care-work/">examples</a>
+            of "indirect care," but these actions barely scratch the surface of the rich and varied ways
+            that humans rely on and uplift one another with care.</p>
+        <p class="text">
+            Some people are paid for care work; the vast majority are not. Across the world
+            (according to the OECD's limited <a href="https://www.oecd.org/gender/data/employment/">data</a>), women do
+            on average <i>at least</i> 3 hours of unpaid labor per day.
+            Men do, on average, <i>at most</i> 3 hours of unpaid labor per day. Globally, men perform many more hours of
+            paid labor than women do, but even women who work full time outside the home still do more unpaid work than
+            men do. Paid work
+            is easier to measure and count, which in turn makes it not only easier
+            to study and understand, but more likely to be counted and valued as labor.</p>
+    </div>
+</div>
+<div class="end-text delta">
+    <div id="end-text-3">
+        <p class="text">What might be gained by better recognizing and understanding the labor that goes on unpaid? It
+            is essential
+            both to the paid labor it makes possible and to the unquantifiable social fabric of a functioning society.
+            Unpaid labor supports the entire global economy, as well as so much more than can be measured in money or
+            data.</p>
+        <p class="text">From a data visualization perspective, this project aims to reflect on the data we do have, and
+            point out the negative space of the data we lack.</p>
+        <p class="text">If you're curious to read about the background of this project, including visualizations of paid
+            and
+            unpaid labor with data from the OECD, check out the accompanying article here.</p>
+        <br>
+    </div>
+</div>
+
+<div class="end-text gamma">
+    <div id="end-text-4">
+        <p class="text">Thanks so much for reading and interacting with this project. I have to say a massive thank you
+            to Ellie Frymire
+            for advising this project and providing cogent feedback and lots of cheerleading. A big thanks also to Matt
+            Gold and Jason Nielsen for their support. </p>
+        <br>
+        <p class="text" id="heart"> made with &lt;3 by eva sibinga</p>
+    </div>
+    <br>
+    <footer>
+        <a target="_blank" href='https://github.com/esibinga'><i class="fab fa-github"></i></a> |
+        <a target="_blank" href='https://www.linkedin.com/in/eva-sibinga-729b18aa/'><i class="fab fa-linkedin"></i></a>
+        |
+        <a href="mailto: tsibinga@gradcenter.cuny.edu"><i class="fas fa-envelope"></i></a>
+        <br>
+        <a id="website-link" href="https://evasibinga.com">evasibinga.com</a>
+    </footer>
+
+</div>
+<br>
+</div>
+
 
 <!-- <p id="log"></p> -->
 
