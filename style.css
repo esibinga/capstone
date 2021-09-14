@@ -262,14 +262,47 @@ footer a:hover {
         }
 
         .one {
-            margin-bottom: 0%;
+            margin-bottom: 50%;
             top: 1vh;
             padding-top: 5vh;
         }
-        .one {
-            margin-bottom: 0%;
+        .two {
             top: 1vh;
-            padding-top: 5vh;
+        }
+
+        .three {
+            top: 1vh;
+        }
+        .four {
+            margin-bottom: 30%;
+            top: 1vh;
+            /* box-shadow: 0 0 0 0 #fff1c5; */
+        }
+    
+        .five {
+            margin-bottom: 30%;
+            padding-top: 0vh;
+            top: 1vh;
+            box-shadow: 0 0 0 0 #fff1c5;
+        }
+    
+        .six {
+            margin-bottom: 30%;
+            padding-top: 0vh;
+            top: 1vh;
+            box-shadow: 0 0 0 0 #fff1c5;
+        }
+
+        .observable-container{
+            padding: 1% 0%;
+            background-color: #fff1c5;
+            z-index: 4;
+            box-shadow: 0 0 100px 200px #fff1c5;
+            margin-top: 50vh;
+            position: sticky;
+            top: 10vh;
+            margin-bottom: 50vh;
+
         }
 
         .end-text{
@@ -292,9 +325,11 @@ footer a:hover {
             line-height: 2vh;
             font-size: 2.25vmin;
         }
+        footer{
+            margin-top: 30vh;
+        }
+
       }
-
-
 
 
     /*  image fade-ins  */
