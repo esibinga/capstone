@@ -4,8 +4,8 @@ body{
     font-family: 'helvetica-light', sans-serif; 
     color: #23343f;
     margin: 0;
-    scroll-snap-type: y mandatory;
-    overflow-x: hidden;
+    /* scroll-snap-type: y mandatory; */
+    /* overflow-x: hidden; */
 }
 
     .question{
@@ -258,7 +258,7 @@ footer a:hover {
             background-color: #fff1c5;
             box-shadow: 0 0 100px 200px #fff1c5;
             position: sticky;
-            top: 1vh;
+            top: 3vh;
         }
 
         .one {
@@ -269,13 +269,25 @@ footer a:hover {
         }
       }
 
+      .end-text{
+        background-color: #fff1c5;
+        box-shadow: 0 0 100px 200px #fff1c5;
+        margin-top: 30vh;
+        padding-top: 0vh;
+        padding-bottom: 20vh;
+        z-index: 5;
+        font-family: 'monaco';
+        position: sticky;
+        top: 1vh;
+        color: #23343f;
+    }
+
 
     /*  image fade-ins  */
 
     img {
-        max-height: 15vh; /* dynamically resize images */
-        /* max-width: 15vh; dynamically resize images */
-
+       max-height: 15vh; /* dynamically resize images */
+       /* max-width: 15vh;  /* dynamically resize images */
     }
 
     .fade-in-image {

@@ -180,11 +180,12 @@
             Have you
             paid someone else to do any of this labor for you? </p>
         <p class="text">The answers will be different for everyone, and that matters. "Clean data" when it comes to care
-            means scrubbing off parts of what make us human. </p>
+            means scrubbing off parts of what make us human. That's a necessary evil when it comes to data, but it's
+            worth pausing to reflect on what's lost as well as what's gained. </p>
         <p class="text">That's why you can drag the icons to rearrange the graph as you see fit, and why you can request
             a new icon
             here to fill in the gaps.</p>
-        <form id="form" name="submit-to-google-sheet">
+        <form id="form" name="submit-to-google-sheet" onSubmit="alert('Thank you for submitting an icon request!');">
             <label>What did I leave out?</label>
             <input type="text" name="icon_request">
             <button type="submit" id="submit-form">Request an icon</button>
@@ -228,7 +229,7 @@
     <div id="end-text-4">
         <p class="text">Thanks so much for reading and interacting with this project. I have to say a massive thank you
             to Ellie Frymire
-            for advising this project and providing cogent feedback and lots of cheerleading. A big thanks also to Matt
+            for her role as advisor, providing cogent feedback and lots of cheerleading. A big thanks also to Matt
             Gold and Jason Nielsen for their support. </p>
         <br>
         <p class="text" id="heart"> made with &lt;3 by eva sibinga</p>
@@ -256,7 +257,7 @@
   </form> -->
 
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzNysMIceaFLb0roF05AWo2jr6WEcFJivCTwIo5WL_AkAkq3O_cvdOY2WSGEyrTu_EoTw/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxbHRqfj_QExIeldUIq_oZ1sFUrrVKCdz5MECnVEU4ipi2f_imoIIy48CTAcVIPLElxqg/exec'
     const form = document.forms['submit-to-google-sheet']
 
     form.addEventListener('submit', e => {
