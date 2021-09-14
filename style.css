@@ -250,22 +250,22 @@ footer a:hover {
     @media only screen and (max-width: 600px) {
         .primer {
             margin-top: 10vh;
-            padding-top: 10vh;
+            padding-top: 5vh;
             padding-bottom: 20vh;
             z-index: 2;
             background-color: #fff1c5;
             box-shadow: 0 0 100px 200px #fff1c5;
             position: sticky;
             top: 3vh;
-            line-height: 2vh;
-             font-size: 2.25vmin; 
+            /* line-height: 2vh;
+             font-size: 2.25vmin;  */
 
         }
 
         .one {
             margin-bottom: 0%;
             top: 1vh;
-            padding-top: 10vh;
+            padding-top: 5vh;
         }
       }
 
@@ -280,9 +280,14 @@ footer a:hover {
         position: sticky;
         top: 1vh;
         color: #23343f;
+        /* line-height: 2vh; */
+        
+    }
+
+    .text{
+        padding: 0% 15%;
         line-height: 2vh;
         font-size: 2.25vmin;
-
     }
 
 
