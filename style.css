@@ -246,8 +246,6 @@ footer a:hover {
     }
   
 
-
-
     /* media queries */
     @media only screen and (max-width: 600px) {
         .primer {
@@ -259,13 +257,15 @@ footer a:hover {
             box-shadow: 0 0 100px 200px #fff1c5;
             position: sticky;
             top: 3vh;
+            line-height: 2vh;
+             font-size: 2.25vmin; 
+
         }
 
         .one {
             margin-bottom: 0%;
             top: 1vh;
             padding-top: 10vh;
-
         }
       }
 
@@ -280,6 +280,9 @@ footer a:hover {
         position: sticky;
         top: 1vh;
         color: #23343f;
+        line-height: 2vh;
+        font-size: 2.25vmin;
+
     }
 
 
